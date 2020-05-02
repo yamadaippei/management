@@ -1,9 +1,39 @@
 .user-create
   = form_with model: @user, local: true do |f|
     .field
-      .field-label
-        = f.label :name
+      .field-label 
+        = f.label :フリガナ
+      .field-input
+        = f.text_field :name_kana, autofocus: true
+    .field
+      .field-label 
+        = f.label :名前
       .field-input
         = f.text_field :name, autofocus: true
+    .field
+      .field-label 
+        = f.label :郵便番号
+      .field-input
+        = f.text_field :address_number, autofocus: true
+    .field
+      .field-label 
+        = f.label :住所
+      .field-input
+        = f.text_field :address, autofocus: true
+    .field
+      .field-label 
+        = f.label :電話番号
+      .field-input
+        = f.text_field :phone, autofocus: true
+    .field
+      .field-label 
+        = f.label :性別
+      .field-input
+        = f.text_field :sex, autofocus: true
+    .field
+      .field-label 
+        = f.label :年齢
+      .field-input
+        = f.text_field :age, autofocus: true
     .actions
       = f.submit "作成", class: 'btn'
