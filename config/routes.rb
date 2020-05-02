@@ -3,5 +3,9 @@ Rails.application.routes.draw do
   root 'management#index'
   
   resources :management, only:[:index]
-  resources :users, only:[:index, :new, :create]
+  resources :users, only:[:index, :new, :create] do
+    collection do
+      get 'confirmation'
+    end
+  end
 end

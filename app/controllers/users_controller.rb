@@ -18,6 +18,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def confirmation 
+  end
+
   private
 
   def user_params
