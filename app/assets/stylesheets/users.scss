@@ -1,3 +1,53 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.users-header{
+  text-align: center;
+  height: 20px;
+  width: 100vw;
+  margin-bottom: 30px;
+  &__text{
+    font-size: 20px;
+  }
+}
+.users-table{
+  width: 100vw;
+  height: 80%;
+  &__content{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    &__detail{
+      width: 100px;
+      height: 30px;
+      display: inline-block;
+    }
+  }
+}
+.users-new-page{
+  height: 20px;
+  text-align: center;
+  .link-user-create{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+}
+
+
+.user-new-header{
+  height: 60px;
+  text-align: center;
+}
+.user-create{
+  justify-content: space-between;
+  .field{
+    display: flex;
+    padding-left: 40%;
+    .field-label{
+      width: 100px;
+      height: 50px;
+    }
+    .field-input{
+      width: 100px;
+      height: 50px;
+    }
+  }
+}
