@@ -1,7 +1,12 @@
-%h1 Management#index
-%p Find me in app/views/management/index.html.erb
+.toppage-header
+  %p.toppage-header__text 症状管理アプリ
 
+.toppage-body
+  %ul.toppage-body__table
+    %li.users-index 
+      = link_to '患者一覧', users_path, class:"users-index-table"
 
+    %li.symptom-table
 
-.users-index
-  = link_to 'users-index', users_path
+.footer
+  %p 概要

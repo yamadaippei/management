@@ -1,3 +1,17 @@
-// Place all the styles related to the management controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.toppage-header{
+  text-align: center;
+  &__text{
+    font-size: 18px;
+  }
+}
+
+
+.toppage-body{
+  &__table{
+    font-size: 22px;
+    .users-index-table{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

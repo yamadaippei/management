@@ -1,6 +1,11 @@
-%h1 Users#index
-%p Find me in app/views/users/index.html.haml
+.users-header
+  .users-header__text 患者一覧
 
+.users-table
+  .users-table__content
+    - @user.each do |user|
+      .users-table__content__detail
+        = user.name
 
-.users-new_page
-  = link_to "作成", new_user_path
+.users-new-page
+  = link_to "患者登録", new_user_path, class:"link-user-create"
