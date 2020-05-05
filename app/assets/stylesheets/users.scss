@@ -46,12 +46,19 @@
       height: 50px;
       font-size: 18px;
     }
-    .field-input{
+    .field-input{height: 30px;
       width: 100px;
       height: 50px;
       input{
         height: 30px;
         font-size: 20px;
+      }
+    }
+    .field-input-address-number{
+      display: flex;
+      input{
+        width: 50px;
+        height: 20px;
       }
     }
   }
