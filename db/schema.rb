@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2020_04_28_044045) do
     t.string "name", null: false
     t.string "name_kana", null: false
     t.string "address", null: false
-    t.integer "address_number", null: false
-    t.integer "phone", null: false
+    t.bigint "address_number", null: false
+    t.bigint "phone", null: false
     t.string "sex", null: false
     t.integer "age", null: false
     t.datetime "created_at", null: false
