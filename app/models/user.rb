@@ -15,12 +15,8 @@ class User < ApplicationRecord
                     format: { 
                       with: VALID_PHONE_REGEX
                      }
-  validates :address_number1, presence: true,
+  validates :address_number, presence: true,
                      format: {
-                       with: /\A\d{3}\z/,
-                     }
-  validates :address_number2, presence: true,
-                     format: {
-                       with: /\A\d{4}\z/,
+                       with: /\A\d{7}\z/,
                      }
                       end
