@@ -1,0 +1,22 @@
+.aymptoms-new-header
+  %p 症状の情報を入力します
+
+.symptom-create
+  = form_with model: @symptom, local: true do |f|
+    .field
+      .field-label 
+        = f.label :症状の名前
+      .field-input
+        = f.text_field :name, autofocus: true
+    .field
+      .field-label 
+        = f.label :概要
+      .field-input
+        = f.text_field :content, autofocus: true
+    .field
+      .field-label 
+        = f.label :対処法
+      .field-input
+        = f.text_field :solution, autofocus: true
+    .actions
+      = f.submit "作成", class: 'btn'
