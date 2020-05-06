@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+  has_many :symptoms
 
   validates :address,:sex,:age,            presence: true
   validates :name_kana, presence: true,
